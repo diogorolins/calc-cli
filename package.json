@@ -1,5 +1,5 @@
 {
-  "name": "calc-cli",
+  "name": "@diogorolins/calc-cli",
   "description": "Simple calculator",
   "version": "0.0.1",
   "author": "Diogo Rolins",
@@ -36,7 +36,7 @@
   "main": "src/index.js",
   "oclif": {
     "commands": "./src/commands",
-    "bin": "calc-cli",
+    "bin": "@diogorolins/calc-cli",
     "plugins": [
       "@oclif/plugin-help"
     ]

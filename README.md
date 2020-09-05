@@ -8,43 +8,40 @@ Simple calculator
 [![License](https://img.shields.io/npm/l/calc-cli.svg)](https://github.com/diogorolins/calc-cli/blob/master/package.json)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [calc-cli](#calc-cli)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
-$ npm install -g calc-cli
-$ calc-cli COMMAND
+$ npm install -g @diogorolins/calc-cli
+$ @diogorolins/calc-cli COMMAND
 running command...
-$ calc-cli (-v|--version|version)
-calc-cli/0.0.1 darwin-x64 node-v10.16.3
-$ calc-cli --help [COMMAND]
+$ @diogorolins/calc-cli (-v|--version|version)
+@diogorolins/calc-cli/0.0.1 darwin-x64 node-v10.16.3
+$ @diogorolins/calc-cli --help [COMMAND]
 USAGE
-  $ calc-cli COMMAND
+  $ @diogorolins/calc-cli COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
+* [`@diogorolins/calc-cli help [COMMAND]`](#diogorolinscalc-cli-help-command)
+* [`@diogorolins/calc-cli solve`](#diogorolinscalc-cli-solve)
 
-- [`calc-cli help [COMMAND]`](#calc-cli-help-command)
-- [`calc-cli solve`](#calc-cli-solve)
+## `@diogorolins/calc-cli help [COMMAND]`
 
-## `calc-cli help [COMMAND]`
-
-display help for calc-cli
+display help for @diogorolins/calc-cli
 
 ```
 USAGE
-  $ calc-cli help [COMMAND]
+  $ @diogorolins/calc-cli help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -55,22 +52,18 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
 
-## `calc-cli solve`
+## `@diogorolins/calc-cli solve`
 
-Describe the command here
+Solve asic operations
 
 ```
 USAGE
-  $ calc-cli solve
-
-OPTIONS
-
+  $ @diogorolins/calc-cli solve
 
 DESCRIPTION
   ...
-  Solve asic math operations
+  Cli application that solves basic math operations
 ```
 
 _See code: [src/commands/solve.js](https://github.com/diogorolins/calc-cli/blob/v0.0.1/src/commands/solve.js)_
-
 <!-- commandsstop -->
