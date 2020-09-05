@@ -20,8 +20,12 @@ class SolveCommand extends Command {
       ]);
       operation = responses.operation;
     }
-    const result = eval(`${first}${operation}${second}`);
-    this.log(chalk.green(`Answer: ${result}`));
+    try {
+      const result = eval(`${first}${operation}${second}`);
+      this.log(chalk.green(`Answer: ${result}`));
+    } catch (err) {
+      this.log(chalk.red("Invalid Number!!"));
+    }
   }
 }
 
