@@ -1,0 +1,51 @@
+{
+  "name": "calc-cli",
+  "description": "Simple calculator",
+  "version": "0.0.1",
+  "author": "Diogo Rolins",
+  "bin": {
+    "calc-cli": "./bin/run"
+  },
+  "bugs": "https://github.com/diogorolins/calc-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.0",
+    "chalk": "^4.1.0",
+    "cli-ux": "^5.5.0",
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "globby": "^10.0.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/diogorolins/calc-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "N",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "calc-cli",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "diogorolins/calc-cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
