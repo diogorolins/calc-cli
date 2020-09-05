@@ -25,9 +25,9 @@ class SolveCommand extends Command {
   }
 }
 
-SolveCommand.description = `Describe the command here
+SolveCommand.description = `Solve asic operations
 ...
-Extra documentation goes here
+Cli application that solves basic math operations
 `;
 
 module.exports = SolveCommand;
